@@ -123,6 +123,7 @@ login({ appState: [] }, (err, api) => {
 ##email pass login method(new added)
 
 // Traditional appState login (still works)
+```js
 const login = require('./index');
 
 login({ appState: JSON.parse(fs.readFileSync('appstate.json')) }, (err, api) => {
@@ -145,7 +146,7 @@ login({ email: 'your_email', password: 'your_password' }, (err, api) => {
   // Use api...
 });
 
-
+```
 ### Saving session.
 
 To avoid logging in every time you should save AppState (cookies etc.) to a file, then you can use it without having password in your scripts.
