@@ -15,19 +15,19 @@ MODIFIED BY MUEID MURSALIN RIFAT
 
 ## Install
 
-If you just want to use @shadow/catx-fca, you should use this command:
+If you just want to use catx-fca, you should use this command:
 
 ```bash
-npm install @shadow/catx-fca@latest
+npm install catx-fca@latest
 ```
 
-It will download @shadow/catx-fca from NPM repositories
+It will download catx-fca from NPM repositories
 
 ## Example Usage
 
 ```javascript
 
-const login = require("@shadow/catx-fca");
+const login = require("catx-fca");
 
 login({ appState: [] }, (err, api) => {
     if (err) return console.error(err);
@@ -66,7 +66,7 @@ __Tip__: to find your own ID, you can look inside the cookies. The `userID` is u
 __Example (Basic Message)__
 
 ```js
-const login = require("@shadow/catx-fca");
+const login = require("catx-fca");
 
 login({ appState: [] }, (err, api) => {
     if (err) {
@@ -88,7 +88,7 @@ login({ appState: [] }, (err, api) => {
 __Example (File upload)__
 
 ```js
-const login = require("@shadow/catx-fca");
+const login = require("catx-fca");
 const fs = require("fs"); // ✅ Required the fs module
 
 login({ appState: [] }, (err, api) => {
@@ -123,6 +123,7 @@ login({ appState: [] }, (err, api) => {
 ##email pass login method(new added)
 
 // Traditional appState login (still works)
+
 ```js
 const login = require('./index');
 
@@ -147,6 +148,7 @@ login({ email: 'your_email', password: 'your_password' }, (err, api) => {
 });
 
 ```
+
 ### Saving session.
 
 To avoid logging in every time you should save AppState (cookies etc.) to a file, then you can use it without having password in your scripts.
@@ -155,7 +157,7 @@ __Example__
 
 ```js
 const fs = require("fs");
-const login = require("@shadow/catx-fca");
+const login = require("catx-fca");
 
 const credentials = { appState: [] };
 
@@ -190,7 +192,7 @@ __Example__
 
 ```js
 const fs = require("fs");
-const login = require("@shadow/catx-fca");
+const login = require("catx-fca");
 
 // Simple echo bot: Repeats everything you say. Stops when you say "/stop".
 login({ appState: JSON.parse(fs.readFileSync("appstate.json", "utf8")) }, (err, api) => {
