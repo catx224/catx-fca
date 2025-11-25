@@ -8,7 +8,6 @@ const axios = require('axios');
 const path = require('path');
 const models = require("./lib/database/models");
 const logger = require("./lib/logger");
-const { graphLogin, handleTwoFactor } = require("./lib/login");
 const { v4: uuidv4 } = require('uuid');
 
 let checkVerified = null;
