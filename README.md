@@ -2,7 +2,7 @@
 
 ![20241210_183831](https://files.catbox.moe/4rl0za.webp)
 
-<h2 align="center"><b>Unoffcial Facebook Chat API</b></h2><br>This package is created by <b>DongDev</b>
+<h2 align="center"><b>Unoffcial Facebook Chat API</b></h2><br>This package is created by <b>DongDev</b> And Modified By <b>Mueid Mursalin Rifat</b>
 
 ![Image](https://files.catbox.moe/8urnyq.png)
 
